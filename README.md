@@ -28,7 +28,7 @@
 Clona il repository o scarica la cartella, poi esegui:
 
 ```bash
-make install
+sudo make install
 ```
 
 ## 🔧 Disinstallazione
@@ -36,5 +36,5 @@ make install
 all'interno della directory attiva-stampante digita
 
 ```bash
-make uninstall
+sudo make uninstall
 ```
