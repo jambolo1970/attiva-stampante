@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Attiva Stampante
+Comment=Riattiva stampanti disabilitate via CUPS
+Exec={{BIN_PATH}}/attiva-stampante-launcher.sh
+Icon={{ICON_PATH}}/attiva-stampante.png
+Terminal=false
+Categories=Utility;System;
