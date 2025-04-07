@@ -25,7 +25,7 @@
 
 ## 🚀 Installazione
 
-Clona il repository o scarica la cartella, poi esegui:
+Clona il repository o scarica la cartella, poi esegui all'interno della stessa cartella scompattata:
 
 ```bash
 sudo make install
