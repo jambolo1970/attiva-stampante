@@ -2,6 +2,8 @@
 import subprocess
 import getpass
 import sys
+import time
+import shutil
 
 COLOR_RESET = "\033[0m"
 COLOR_GREEN = "\033[92m"
@@ -93,6 +95,10 @@ def enable_printer(printer_name, password):
     except Exception as e:
         print("Errore:", e)
 
+def send_notification(title, message):
+    if shutil.which("notify-send"):
+        subprocess.run(["notify-send", title, message])
+
 def main():
     print("=== \033[1mGestione Stampanti (OpenSUSE / Linux Mint)\033[0m ===")
     password = getpass.getpass("Inserisci la password di root (sudo): ")
@@ -114,6 +120,10 @@ def main():
         enable_printer(selected, password)
     except (IndexError, ValueError):
         print(f"{COLOR_RED}Scelta non valida.{COLOR_RESET}")
+
+    print("\nℹ️  Il terminale si chiuderà automaticamente tra 20 secondi...")
+    send_notification("Attiva Stampante", "Operazione completata. Il terminale si chiuderà tra 10 secondi.")
+    time.sleep(10)
 
 if __name__ == '__main__':
     main()
