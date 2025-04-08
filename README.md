@@ -43,3 +43,6 @@ all'interno della directory attiva-stampante digita
 ```bash
 sudo make uninstall
 ```
+## 🤝 Contribuire
+
+I contributi sono benvenuti! Sentitevi liberi di inviare una richiesta o di aprire un problema per suggerire miglioramenti o segnalare bug, sarò ben lieto di modificare e migliorare questo programmino python.
